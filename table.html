@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Hot Restraunt</title>
+	<!-- Latest compiled and minified CSS & JS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+	<div class="container">
+		<div class="jumbotron text-center">
+			<h1>
+				<span class="glyphicon glyphicon-fire"></span> Welcome to Cluck N' Bell</h1>
+			<h3>Check your table status</h3>
+			<hr>
+			<a href="/reservations.">
+				<button class="btn btn-danger btn-lg">
+					<span class="glyphicon glyphicon-credit-card"></span> Make A Reservation</button>
+			</a>
+			<a href="/index">
+				<button class="btn btn-default btn-lg">
+					<span class="glyphicon glyphicon-home"></span>
+				</button>
+			</a>
+		</div>
+		<div class="row">
+
+			<div class="col-lg-12">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title">
+							<strong>Current Reservations</strong>
+						</h3>
+					</div>
+					<div class="panel-body">
+						<div class="well">
+							<h2 id="item_id"></h2>
+							<h2 id="unique_id"></h2>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-12">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title">
+							<strong>Wait List</strong>
+						</h3>
+					</div>
+					<div class="panel-body">
+						<div class="well">
+							<h2 id="wait"></h2>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+	</div>
+	<footer class="footer">
+		<div class="container">
+				<p><a href="/api/table">API Table Link</a> | <a href="/api/waitlist">API Wait List</a></p>
+		</div>
+</footer>
+	</div>
+	</body>
