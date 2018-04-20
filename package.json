@@ -16,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/jkrowden/Restaurant-App/issues"
   },
-  "homepage": "https://github.com/jkrowden/Restaurant-App#readme"
+  "homepage": "https://github.com/jkrowden/Restaurant-App#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "mysql": "^2.15.0",
+    "path": "^0.12.7"
+  }
 }
