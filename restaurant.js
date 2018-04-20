@@ -23,15 +23,15 @@ var waitlist = [{
 }];
 
 app.get("/", function (req, res) {
-	res.sendFile(path.join(__dirname, "index.html"));
+	res.sendFile(path.join(__dirname, "/index.html"));
 });
 
-app.get("/createreservation", function (req, res) {
-	res.sendFile(path.join(__dirname, "reservations.html"));
+app.get("/reservations", function (req, res) {
+	res.sendFile(path.join(__dirname, "/reservations.html"));
 });
 
 app.get("/table", function (req, res) {
-	res.sendFile(path.join(__dirname, "table.html"));
+	res.sendFile(path.join(__dirname, "/table.html"));
 });
 
 app.get("/api/:table", function (req, res) {
@@ -60,8 +60,11 @@ app.post("/reserve", function (req, res) {
 	if (reservations.length > 4) {
 		//$ new div
 		//$('name') etc
+
+		alert('You have been added to the reservations list!');
 	} else {
 		//push to waitlist
+		alert('You dun messed up j-j-jeremy. You are on the waitlist');
 	}
 });
 
