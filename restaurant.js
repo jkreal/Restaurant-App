@@ -7,6 +7,7 @@ var PORT = 3000;
 
 app.use(bodyparser.urlencoded({ extended: true }));
 app.use(bodyparser.json());
+app.use(express.static(__dirname + "client"));
 
 var reservations = [{
 	name: 'DIAZ INN',
