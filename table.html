@@ -6,8 +6,6 @@
 	<title>Hot Restraunt</title>
 	<!-- Latest compiled and minified CSS & JS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-	<script src="https://code.jquery.com/jquery.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
 </head>
 
@@ -19,7 +17,7 @@
 				<span class="glyphicon glyphicon-fire"></span> Welcome to Cluck N' Bell</h1>
 			<h3>Check your table status</h3>
 			<hr>
-			<a href="/reservations.">
+			<a href="/reservations">
 				<button class="btn btn-danger btn-lg">
 					<span class="glyphicon glyphicon-credit-card"></span> Make A Reservation</button>
 			</a>
@@ -50,22 +48,32 @@
 				<div class="panel panel-default">
 					<div class="panel-heading">
 						<h3 class="panel-title">
-							<strong>Wait List</strong>
+							<strong class="waittest">Wait List</strong>
 						</h3>
 					</div>
 					<div class="panel-body">
 						<div class="well">
 							<h2 id="wait"></h2>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	</div>
-	</div>
 	<footer class="footer">
 		<div class="container">
-				<p><a href="/api/table">API Table Link</a> | <a href="/api/waitlist">API Wait List</a></p>
+			<p>
+				<a href="/api/tables">API Table Link</a> |
+				<a href="/api/waitlist">API Wait List</a>
+			</p>
 		</div>
-</footer>
+	</footer>
 	</div>
-	</body>
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery.js"></script>
+	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="./client/client.js"></script>
+
+</body>
+
+</html>
